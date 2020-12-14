@@ -13,25 +13,14 @@ router.get('/masuk',
 );
 
 //dari login.ejs
-/*router.post('/masuk',
+router.post('/masuk',
     async (req, res) => {
-        // cek login
-        const username = req.body.username;//mau dapatkan username di file html login.ejs
-        const password = req.body.password;
-
-        // check username and password
-        if (username === "admin" && password === "admin") {
-            // create session for user
-            // session,cookies disimpan dibrowser
-            //nama ssession bebas, session.________, lebih aman simpan di database dgn cara id user*/
+        
             req.session.user = "admin";
 
             // login success and redirect to member area
             res.redirect('/');//jika sudah berhasil login di oper ke index
-        /*} else {
-            // render the login page with error information
-            res.render('pages/masuk', { layout: false, error: 'Wrong username or password.' });//selain render, lempar data juga ke pages/login
-        }*/
+        
     }
 );//cek login disini, dilempar ke sini user dan pasword yg diinput
 
