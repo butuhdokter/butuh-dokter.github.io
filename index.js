@@ -12,6 +12,11 @@ const layouts = require('express-ejs-layouts');
 
 const app = express();
 
+//database
+/*var methodOverride = require("method-override")
+const path = require("path")
+const con = require("./config/db.js")*/
+
 app.set('view engine', 'ejs');//engine menggunakan ejs
 
 app.use(bodyParser.urlencoded());//bodyprasing supaya bisa ngeparsing kyk get post / ngirim data
@@ -52,6 +57,14 @@ app.use('/caridokter', caridokterRouter);
 app.use('/infokesehatan', infokesehatanRouter);
 app.use('/tentangkami', tentangkamiRouter);
 app.use('/hubungikami', hubungikamiRouter);
+
+//-----------------------------------uji coba---------------------------------
+
+/*app.get('/masuk/masuk', (request, response) => {
+    response.send('Ketikkan Email dan Password.');
+});*/
+
+//-----------------------------------uji coba---------------------------------
 
 app.listen( process.env.PORT || 3000);//mencoba running
 console.log('Server runs at port 3000...');

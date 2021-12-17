@@ -48,24 +48,24 @@
             
         <img src="/images/butuhdokter3.png">
         
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link ml-3" href="#">
-                  
-                </a>
-              </li>
-              <form class="form-inline waves-light"style="width: 100%;"mdbRippleRadius>
-                <input class="form-control"style="width: 80%;"type="text"placeholder="Cari di Butuhdokter">
-                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                <i data-feather="search"></i>
-                </button>
-                </form>
-            </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link ml-3" href="#">
+                
+              </a>
+            </li>
+            <form class="form-inline waves-light"style="width: 100%;"mdbRippleRadius>
+              <input class="form-control"style="width: 80%;"type="text"placeholder="Cari di Butuhdokter">
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              <i data-feather="search"></i>
+              </button>
+              </form>
+          </ul>
                 
             <ul class="navbar-nav mr-1">
                 <li class="nav-item active">
@@ -125,25 +125,36 @@
   </div>
 
   <div class="container">
+    <div>
     <label for="uname" class="c"><b>Email</b></label><br>
     <input type="text1" placeholder="Enter Email" name="username" class="form-control" required autofocus>
+    </div>
 <br><br>
+    <div>
     <label for="psw" class="d"><b>Password</b></label><br>
     <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
-<br><br>
+    </div>
+  
+    <br><br>
+    <div>
     <button type="submit" class="btn1">Masuk</button><br>
+    <!--<input class="form-control button btn1" type="submit" name="login" value="Login">-->
+
     <% if (locals.error) { %>
         <span class="text-danger pl-2"><%= error %></span>
     <% } %>
+  </div>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Ingat Saya
     </label>
   </div>
-
+  </form>
   <div class="x1" style="background-color:#f1f1f1">
+    <form action = "depan.html">
+    <button type="btn1" class="cancelbtn"><!--<a href="">-->Kembali<!--</a>--></button>
     
-    <button type="btn1" class="cancelbtn"><a href="depan.html">Kembali</a></button>
-    <span class="psw">Lupa <a href="#">Password?</a></span>
+    <span class="psw"><a href="#" class = b1>Lupa Password?</a></span>
+    </form>
   </div>
   
 <div class="x1">
@@ -154,20 +165,25 @@
   
   <h6 class="h5textsize">atau masuk dengan</h6><br>
    
+  <form action = "depan.html">
   <button type="submit" class="btn2">
     <i data-feather="facebook" class="fa.facebook">
-
+      
     </i>
     Facebook
   </button><br>
+  </form>
+
+  <form action = "depan.html">
   <button type="submit" class="btn3">
     <span class="iconify" data-icon="fe-google" data-inline="false"></span>
     Google
   </button><br>
+  </form>
   </div>
 
 </div>
-</form>
+<!--</form>-->
 </nav>
 <br><br><br>
 
